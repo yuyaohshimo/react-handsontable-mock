@@ -19,12 +19,11 @@ npm >= 3.7
 
 ### Handsontable
 
-1. `hot-formula-parser`
-2. `react-handsontable` if you want to use `hot` as a react component
+- `react-handsontable` if you want to use `hot` as a react component
 
 For dev:
 
-1. `expose-loader`
+- `expose-loader`
 
 ## Tips
 
