@@ -19,9 +19,7 @@ export default class Table2 extends React.Component {
       [],
       []
     ];
-    this.handsontableHeader = [
-      ['Last Name', 'First Name', 'Email', 'Role'],
-    ]
+    this.colHeaders = ['Last Name', 'First Name', 'Email', 'Role']
     this.handsontableColumns = [
       {},
       {},
@@ -62,9 +60,8 @@ export default class Table2 extends React.Component {
       <div id="example-component">
         <HotTable ref="table2" root="table2" settings={{
           data: this.handsontableData,
-          nestedHeaders: this.handsontableHeader,
+          colHeaders: this.colHeaders,
           columns: this.handsontableColumns,
-          colHeaders: true,
           rowHeaders: true,
           currentRowClassName: 'currentRow',
           currentColClassName: 'currentCol',
