@@ -34,7 +34,17 @@ module.exports = {
       }, {
         test: require.resolve('zeroclipboard'),
         loader: 'expose?ZeroClipboard'
+      }, {
+        test: require.resolve('hot-formula-parser/dist/formula-parser.js'),
+        loader: 'expose-loader?formulaParser'
+      }, {
+        test: (/\.css$/), loader: "style-loader!css-loader"
       }
     ]
+  },
+  resolve: {
+    alias: {
+      handsontable: path.resolve(__dirname, 'node_modules/handsontable-pro')
+    }
   }
 };
