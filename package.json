@@ -37,6 +37,7 @@
     "handsontable-pro": "git+ssh://git@git.handsontable.com:handsontable/handsontable-pro.git#1.10.0",
     "hot-formula-parser": "^2.0.1",
     "react": "^15.3.2",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "react-handsontable": "^0.2.0"
   }
 }
