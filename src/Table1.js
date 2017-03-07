@@ -55,6 +55,7 @@ class Table1 extends Component {
       <div>
         <div>Handsontable</div>
         <div ref={(c) => this._hotWrapper = c}></div>
+        <p>*Export feature works on Pro edition</p>
         <button onClick={this.onClick}>export</button>
       </div>
     )
