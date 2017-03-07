@@ -5,7 +5,7 @@ import pikaday from 'pikaday';
 import Zeroclipboard from 'zeroclipboard';
 import Handsontable from 'handsontable';
 
-class HoT extends Component {
+class Table1 extends Component {
   componentDidMount() {
     if (!this.hot) {
       this.hot = new Handsontable(this._hotWrapper, {
@@ -31,4 +31,4 @@ class HoT extends Component {
   }
 }
 
-export default HoT;
+export default Table1;
