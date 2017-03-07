@@ -9,6 +9,12 @@ open http://localhost:3000
 
 Table2 uses `react-handsontable`
 
+## Requirements
+
+```
+npm >= 3.7
+```
+
 ## Dependencies
 
 ### Handsontable
@@ -19,3 +25,11 @@ Table2 uses `react-handsontable`
 For dev:
 
 1. `expose-loader`
+
+## Tips
+
+### Install specific version
+
+```
+npm install git+ssh://git@git.handsontable.com:handsontable/handsontable-pro.git#1.10.0  --save
+```
