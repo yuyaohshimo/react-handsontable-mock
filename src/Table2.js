@@ -65,6 +65,8 @@ export default class Table2 extends React.Component {
           rowHeaders: true,
           currentRowClassName: 'currentRow',
           currentColClassName: 'currentCol',
+          columnSorting: true,
+          sortIndicator: true,
           width: 600,
           height: 300,
           stretchH: 'all'
