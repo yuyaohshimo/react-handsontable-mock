@@ -66,6 +66,8 @@ export default class Table2 extends React.Component {
           columns: this.handsontableColumns,
           colHeaders: true,
           rowHeaders: true,
+          currentRowClassName: 'currentRow',
+          currentColClassName: 'currentCol',
           width: 600,
           height: 300,
           stretchH: 'all'
