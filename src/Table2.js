@@ -15,11 +15,22 @@ export default class Table2 extends React.Component {
   constructor(props) {
     super(props);
     this.handsontableData = [
-      ["", "Ford", "Volvo", "Toyota", "Honda"],
-      ["2016", 10, 11, 12, 13],
-      ["2017", 20, 11, 14, 13],
-      ["2018", 30, 15, 12, 13]
+      ['', '', '', ''],
+      [],
+      []
     ];
+    this.handsontableHeader = [
+      ['Last Name', 'First Name', 'Email', 'Role'],
+    ]
+    this.handsontableColumns = [
+      {},
+      {},
+      {},
+      {
+        editor: 'select',
+        selectOptions: ['Administrator', 'General Staff', 'Developer']
+      }
+    ]
     this.onClick = this.onClick.bind(this);
   }
 
@@ -51,6 +62,8 @@ export default class Table2 extends React.Component {
       <div id="example-component">
         <HotTable ref="table2" root="table2" settings={{
           data: this.handsontableData,
+          nestedHeaders: this.handsontableHeader,
+          columns: this.handsontableColumns,
           colHeaders: true,
           rowHeaders: true,
           width: 600,
